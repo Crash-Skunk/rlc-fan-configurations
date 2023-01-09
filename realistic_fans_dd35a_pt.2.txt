@@ -6,7 +6,7 @@
 @trigger 
 #Original E2 created by Magnum
 #Part 2 of a 2 part E2 for the DD35A (modifiable for the DD35B unit)
-#Wire this e2 to be set to On2 instead of On1
+#Wire this E2 to be set to On2 instead of On1 to accomodate the DPM
 if(first()|dupefinished()){
     
     FuelSaver = 0
