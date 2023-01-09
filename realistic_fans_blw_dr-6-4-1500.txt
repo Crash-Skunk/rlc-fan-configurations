@@ -5,7 +5,7 @@
 @persist Temperature FuelSaver Tmax Horsepower AmbientLoss IdleHeat Run8Heat Fans FanHeat F1_On F1_Off F2_On F2_Off F3_On F3_Off F1 F2 F3 Speed1 Speed2 Speed3 SpeedD
 @trigger 
 #Original E2 created by Magnum
-#E2 modified to work with the DR-6-4-1500 Babyface
+#E2 modified to work with the DR-6-4-1500 Babyface (also usable for the B-unit)
 if(first()|dupefinished()){
     
     FuelSaver = 0
