@@ -4,7 +4,9 @@
 @persist FanSpeed FanAccel Theta1 Theta2 Theta3 Theta4 ThetaD1 ThetaD2 L:entity
 @persist Temperature FuelSaver Tmax Horsepower AmbientLoss IdleHeat Run8Heat Fans FanHeat F1_On F1_Off F2_On F2_Off F3_On F3_Off F4_On F4_Off F1 F2 F3 F4 Speed1 Speed2 Speed3 Speed4 SpeedD
 @trigger 
-
+#Original E2 created by Magnum
+#E2 built for the MK5000C model in WestAusMan98's Pack
+#Fan placement is pretty standard among the 5000 and 6000 model series, so just adjust the hp number to see what fits
 if(first()|dupefinished()){
     
     FuelSaver = 0
