@@ -6,6 +6,7 @@
 @trigger 
 #Original E2 created by Magnum
 #Part 1 of a 2 part fan e2 for the DD35A (Modifiable for the DD35B unit)
+#Wire as normal for this e2
 if(first()|dupefinished()){
     
     FuelSaver = 0
