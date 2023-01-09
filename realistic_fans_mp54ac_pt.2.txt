@@ -4,7 +4,9 @@
 @persist FanSpeed FanAccel Theta1 Theta2 Theta3 ThetaD1 ThetaD2 L:entity
 @persist Temperature FuelSaver Tmax Horsepower AmbientLoss IdleHeat Run8Heat Fans FanHeat F1_On F1_Off F2_On F2_Off F3_On F3_Off F1 F2 F3 Speed1 Speed2 Speed3 SpeedD
 @trigger 
-
+#Original E2 created by Magnum
+#Part 2 of a 2 part fan e2 for the MPI MPXpress model with MP54 bodygroups toggled
+#Wire On1 to On2 to accomodate for the DPM nature
 if(first()|dupefinished()){
     
     FuelSaver = 0
