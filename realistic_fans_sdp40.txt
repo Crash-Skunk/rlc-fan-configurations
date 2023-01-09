@@ -4,7 +4,9 @@
 @persist FanSpeed FanAccel Theta1 Theta2 Theta3 ThetaD1 ThetaD2 L:entity
 @persist Temperature FuelSaver Tmax Horsepower AmbientLoss IdleHeat Run8Heat Fans FanHeat F1_On F1_Off F2_On F2_Off F3_On F3_Off F1 F2 F3 Speed1 Speed2 Speed3 SpeedD
 @trigger 
-
+#Original E2 created by Magnum
+#E2 built for the SDP40 Model in Grove's Pack
+#Its literally just the SD40 fans moved a bit because the model's fan placement is wonky af
 if(first()|dupefinished()){
     
     FuelSaver = 0
