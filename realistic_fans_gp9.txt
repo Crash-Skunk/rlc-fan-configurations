@@ -4,7 +4,7 @@
 @persist FanSpeed FanAccel Theta1 Theta2 Theta3 ThetaD1 ThetaD2 L:entity
 @persist Temperature FuelSaver Tmax Horsepower AmbientLoss IdleHeat Run8Heat Fans FanHeat F1_On F1_Off F2_On F2_Off F3_On F3_Off F1 F2 F3 Speed1 Speed2 Speed3 SpeedD
 @trigger 
-
+#This e2 is built to work for Anyone's GP9 model (also works for B unit)
 if(first()|dupefinished()){
     
     FuelSaver = 0
