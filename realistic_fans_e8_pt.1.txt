@@ -4,7 +4,9 @@
 @persist FanSpeed FanAccel Theta1 Theta2 Theta3 ThetaD1 ThetaD2 L:entity
 @persist Temperature FuelSaver Tmax Horsepower AmbientLoss IdleHeat Run8Heat Fans FanHeat F1_On F1_Off F2_On F2_Off F3_On F3_Off F1 F2 F3 Speed1 Speed2 Speed3 SpeedD
 @trigger 
-
+#Original E2 created by Magnum
+#This e2 is built to work for Laz's E8/E9 model (can also be used for B unit)
+#This is part 1 of 2 fan configurations for this model, wire as accordingly
 if(first()|dupefinished()){
     
     FuelSaver = 0
