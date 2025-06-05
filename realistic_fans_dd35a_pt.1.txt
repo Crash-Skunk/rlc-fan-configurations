@@ -6,7 +6,7 @@
 @trigger 
 #Original E2 created by Magnum
 #This e2 is built to work for Magnum's DD35A model
-#This is part 1 of 2 man configurations for this model, wire as accordingly
+#This is part 1 of 2 fan configurations for this model, wire as accordingly
 if(first()|dupefinished()){
     
     FuelSaver = 1
