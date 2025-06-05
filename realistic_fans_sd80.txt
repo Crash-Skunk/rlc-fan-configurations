@@ -4,8 +4,7 @@
 @persist FanSpeed FanAccel Theta1 Theta2 Theta3 ThetaD1 ThetaD2 L:entity
 @persist Temperature FuelSaver Tmax Horsepower AmbientLoss IdleHeat Run8Heat Fans FanHeat F1_On F1_Off F2_On F2_Off F3_On F3_Off F1 F2 F3 Speed1 Speed2 Speed3 SpeedD
 @trigger 
-#Original E2 created by Magnum
-#E2 built for the SD80MAC model in Grove's Pack
+
 if(first()|dupefinished()){
     
     FuelSaver = 0
@@ -40,19 +39,19 @@ if(first()|dupefinished()){
     
     #Radiatior Fans
     Theta1 = randint(1,361)-1
-    holoCreate(1,L:toWorld(vec(203.5,0,130)),vec(4,4,1),L:angles():rotateAroundAxis(L:up(),-Theta1),vec(255),"plane")
+    holoCreate(1,L:toWorld(vec(203.5,0,130)),vec(1),L:angles():rotateAroundAxis(L:up(),-Theta1),vec(255),"models/gsgtrainprops/parts/fans/emd_fanhub_48in.mdl")
     holoParent(1,L)
-    holoMaterial(1,"models/proppertextures/fan_generic")
+    holoMaterial(1,"")
     
     Theta2 = randint(1,361)-1
-    holoCreate(2,L:toWorld(vec(259,0,130)),vec(4,4,1),L:angles():rotateAroundAxis(L:up(),-Theta2),vec(255),"plane")
+    holoCreate(2,L:toWorld(vec(259,0,130)),vec(1),L:angles():rotateAroundAxis(L:up(),-Theta2),vec(255),"models/gsgtrainprops/parts/fans/emd_fanhub_48in.mdl")
     holoParent(2,L)
-    holoMaterial(2,"models/proppertextures/fan_generic")
+    holoMaterial(2,"")
     
     Theta3 = randint(1,361)-1
-    holoCreate(3,L:toWorld(vec(314,0,130)),vec(4,4,1),L:angles():rotateAroundAxis(L:up(),-Theta3),vec(255),"plane")
+    holoCreate(3,L:toWorld(vec(314,0,130)),vec(1),L:angles():rotateAroundAxis(L:up(),-Theta3),vec(255),"models/gsgtrainprops/parts/fans/emd_fanhub_48in.mdl")
     holoParent(3,L)
-    holoMaterial(3,"models/proppertextures/fan_generic")
+    holoMaterial(3,"")
     
     #Dynamic Brake Fans
     

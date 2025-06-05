@@ -4,8 +4,7 @@
 @persist FanSpeed FanAccel Theta1 Theta2 Theta3 ThetaD1 ThetaD2 L:entity
 @persist Temperature FuelSaver Tmax Horsepower AmbientLoss IdleHeat Run8Heat Fans FanHeat F1_On F1_Off F2_On F2_Off F3_On F3_Off F1 F2 F3 Speed1 Speed2 Speed3 SpeedD
 @trigger 
-#Original E2 created by Magnum
-#E2 made for whatever model this is, another fan mod for a friend, which is missing, so here you go
+
 if(first()|dupefinished()){
     
     FuelSaver = 1

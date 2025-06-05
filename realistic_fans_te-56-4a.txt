@@ -6,9 +6,6 @@
 @persist RadiatorClosed RadiatorOpen DynamicsClosed DynamicsOpen FanShutterClosed FanShutterOpen HI Shutters:array
 @persist DynQ Ready
 @trigger 
-#Original E2 created by Magnum
-#E2 built for the MK TE-56-4A in... i think WestAusMan98's Pack? i never checked
-#E2 probably also works for the big brother, the TE-56-6A from the same pack (if you can find it)
 if(first()|duped()){
     Ready = 0
 }

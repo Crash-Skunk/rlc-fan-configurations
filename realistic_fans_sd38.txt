@@ -4,8 +4,7 @@
 @persist FanSpeed FanAccel Theta1 Theta2 Theta3 ThetaD1 ThetaD2 L:entity
 @persist Temperature FuelSaver Tmax Horsepower AmbientLoss IdleHeat Run8Heat Fans FanHeat F1_On F1_Off F2_On F2_Off F3_On F3_Off F1 F2 F3 Speed1 Speed2 Speed3 SpeedD
 @trigger 
-#Original E2 created by Magnum
-#E2 built for the SD38 Model in Grove's Pack (equipped with funny micro dynamic fans :>)
+
 if(first()|dupefinished()){
     
     FuelSaver = 0
@@ -40,29 +39,29 @@ if(first()|dupefinished()){
     
     #Radiatior Fans
     Theta1 = randint(1,361)-1
-    holoCreate(1,L:toWorld(vec(192,0,136)),vec(4,4,1),L:angles():rotateAroundAxis(L:up(),-Theta1),vec(255),"plane")
+    holoCreate(1,L:toWorld(vec(192,0,136)),vec(1),L:angles():rotateAroundAxis(L:up(),-Theta1),vec(255),"models/gsgtrainprops/parts/fans/emd_fanhub_48in.mdl")
     holoParent(1,L)
-    holoMaterial(1,"models/proppertextures/fan_generic")
+    holoMaterial(1,"")
     
     Theta2 = randint(1,361)-1
-    holoCreate(2,L:toWorld(vec(263,0,136)),vec(4,4,1),L:angles():rotateAroundAxis(L:up(),-Theta2),vec(255),"plane")
+    holoCreate(2,L:toWorld(vec(263,0,136)),vec(1),L:angles():rotateAroundAxis(L:up(),-Theta2),vec(255),"models/gsgtrainprops/parts/fans/emd_fanhub_48in.mdl")
     holoParent(2,L)
-    holoMaterial(2,"models/proppertextures/fan_generic")
+    holoMaterial(2,"")
     
     
     
     #Dynamic Brake Fans
     
     ThetaD1 = randint(1,361)-1
-    holoCreate(4,L:toWorld(vec(17,0,136)),vec(2.8,2.8,1),L:angles():rotateAroundAxis(L:up(),-ThetaD1),vec(255),"plane")
+    holoCreate(4,L:toWorld(vec(17,0,133)),vec(0.7),L:angles():rotateAroundAxis(L:up(),-ThetaD1),vec(255),"models/gsgtrainprops/parts/fans/emd_fanhub_48in.mdl")
     holoParent(4,L)
-    holoMaterial(4,"models/proppertextures/fan_generic")
+    holoMaterial(4,"")
+    holoBodygroup(4,0,1)
     
     ThetaD2 = randint(1,361)-1
-    holoCreate(5,L:toWorld(vec(68,0,136)),vec(2.8,2.8,1),L:angles():rotateAroundAxis(L:up(),-ThetaD2),vec(255),"plane")
-    holoParent(5,L)
-    holoMaterial(5,"models/proppertextures/fan_generic")
-    
+    holoCreate(5,L:toWorld(vec(68,0,133)),vec(0.7),L:angles():rotateAroundAxis(L:up(),-ThetaD2),vec(255),"models/gsgtrainprops/parts/fans/emd_fanhub_48in.mdl")
+    holoMaterial(5,"")
+    holoBodygroup(5,0,1)
 }
 
 

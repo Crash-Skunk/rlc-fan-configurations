@@ -4,9 +4,7 @@
 @persist FanSpeed FanAccel Theta1 Theta2 Theta3 ThetaD1 ThetaD2 L:entity
 @persist Temperature FuelSaver Tmax Horsepower AmbientLoss IdleHeat Run8Heat Fans FanHeat F1_On F1_Off F2_On F2_Off F3_On F3_Off F1 F2 F3 Speed1 Speed2 Speed3 SpeedD
 @trigger 
-#Original E2 created by Magnum
-#E2 built for the MLW HR616C, will probably also work for the HR616 and HR616 Draper-Taper
-#E2 currently configured with the highest hp in mind, adjust to accomodate your loco hp
+
 if(first()|dupefinished()){
     
     FuelSaver = 1
@@ -41,9 +39,9 @@ if(first()|dupefinished()){
     
     #Radiatior Fans
     Theta1 = randint(1,361)-1
-    holoCreate(1,L:toWorld(vec(307,0,120)),vec(7,7,1),L:angles():rotateAroundAxis(L:up(),-Theta1),vec(255),"plane")
+    holoCreate(1,L:toWorld(vec(307,0,118)),vec(1.65),L:angles():rotateAroundAxis(L:up(),-Theta1),vec(255),"models/gsgtrainprops/parts/fans/emd_fanhub_48in.mdl")
     holoParent(1,L)
-    holoMaterial(1,"models/proppertextures/fan_generic")
+    holoMaterial(1,"")
     
     
     

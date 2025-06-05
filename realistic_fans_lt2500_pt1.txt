@@ -4,9 +4,7 @@
 @persist FanSpeed FanAccel Theta1 Theta2 Theta3 ThetaD1 ThetaD2 L:entity
 @persist Temperature FuelSaver Tmax Horsepower AmbientLoss IdleHeat Run8Heat Fans FanHeat F1_On F1_Off F2_On F2_Off F3_On F3_Off F1 F2 F3 Speed1 Speed2 Speed3 SpeedD
 @trigger 
-#Original E2 created by Magnum
-#Part 1 for a 2 Part E2 for the Lima LT2500 from Laz's Pack
-#Wire this e2 as you would a normal fan e2
+
 if(first()|dupefinished()){
     
     FuelSaver = 0
@@ -41,18 +39,19 @@ if(first()|dupefinished()){
     
     #Radiatior Fans
     Theta1 = randint(1,361)-1
-    holoCreate(1,L:toWorld(vec(0,382,115)),vec(4,4,1),L:angles():rotateAroundAxis(L:up(),-Theta1),vec(255),"plane")
+    holoCreate(1,L:toWorld(vec(0,382,110)),vec(1),L:angles():rotateAroundAxis(L:up(),-Theta1),vec(255),"models/gsgtrainprops/parts/fans/emd_fanhub_48in.mdl")
     holoParent(1,L)
-    holoMaterial(1,"models/proppertextures/fan_generic")
+    holoMaterial(1,"")
     
     
     
     #Dynamic Brake Fans
     
     ThetaD1 = randint(1,361)-1
-    holoCreate(4,L:toWorld(vec(0,82,120)),vec(4,4,1),L:angles():rotateAroundAxis(L:up(),-ThetaD1),vec(255),"plane")
+    holoCreate(4,L:toWorld(vec(0,82,120)),vec(1),L:angles():rotateAroundAxis(L:up(),-ThetaD1),vec(255),"models/gsgtrainprops/parts/fans/emd_fanhub_48in.mdl")
     holoParent(4,L)
-    holoMaterial(4,"models/proppertextures/fan_generic")
+    holoMaterial(4,"")
+    holoBodygroup(4,0,1)
     
     
     

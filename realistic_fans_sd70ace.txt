@@ -4,14 +4,12 @@
 @persist FanSpeed FanAccel Theta1 Theta2 Theta3 ThetaD1 ThetaD2 L:entity
 @persist Temperature FuelSaver Tmax Horsepower AmbientLoss IdleHeat Run8Heat Fans FanHeat F1_On F1_Off F2_On F2_Off F3_On F3_Off F1 F2 F3 Speed1 Speed2 Speed3 SpeedD
 @trigger 
-#Original E2 created by Magnum
-#E2 built for the SD70ACe in WestAusMan98's Pack
-#Will update this code when i learn how to holo the fan model's from the same pack
+
 if(first()|dupefinished()){
     
     FuelSaver = 0
     Fans = 2
-    Horsepower = 4500
+    Horsepower = 4300
     AmbientLoss = 0
     
     F1_On = 55
@@ -41,12 +39,12 @@ if(first()|dupefinished()){
     
     #Radiatior Fans
     Theta1 = randint(1,361)-1
-    holoCreate(1,L:toWorld(vec(187,0,135)),vec(1,1,1),L:angles():rotateAroundAxis(L:up(),-Theta1),vec(255),"models/wam98_trainparts/miscellaneous/emd_sd70ace_m-2_radfan.mdl")
+    holoCreate(1,L:toWorld(vec(185,0,135)),vec(1,1,1),L:angles():rotateAroundAxis(L:up(),-Theta1),vec(255),"models/wam98_trainparts/miscellaneous/emd_sd70ace_m-2_radfan.mdl")
     holoParent(1,L)
     #holoMaterial(1,"models/proppertextures/fan_delco_q_2x4")
 
     Theta2 = randint(1,361)-1
-    holoCreate(2,L:toWorld(vec(271.5,0,135)),vec(1,1,1),L:angles():rotateAroundAxis(L:up(),-Theta2),vec(255),"models/wam98_trainparts/miscellaneous/emd_sd70ace_m-2_radfan.mdl")
+    holoCreate(2,L:toWorld(vec(273.65,0,135)),vec(1,1,1),L:angles():rotateAroundAxis(L:up(),-Theta2),vec(255),"models/wam98_trainparts/miscellaneous/emd_sd70ace_m-2_radfan.mdl")
     holoParent(2,L)
     #holoMaterial(2,"models/proppertextures/fan_delco_q_2x4")
     
